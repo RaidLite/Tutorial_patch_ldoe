@@ -1,16 +1,18 @@
+Patch this in GameManager class only!
+
 patch 1.0:
 
-in class GameManager.Awake() add this.Server = false; before Init(...)
-in class GameManager change battle_url and main_url to "offline://"
+Awake() add this.Server = false; before Init()
+change battle_url and main_url to "offline://"
 
 patch 1.1:
 
-in class GameManager.Awake() add this.Server = false; before Init(...)
-in class GameManager._startUrl change link[s] to "https://raw.githubusercontent.com/RaidLite/ConfigServer/refs/heads/main/ldoez_config.json"
+Awake() add this.Server = false; before Init()
+in _startUrl change links to only "https://raw.githubusercontent.com/RaidLite/ConfigServer/refs/heads/main/ldoez_config.json"
 
-patch 1.2/1.3 and maybe newer (after 1.3 kefir started using il2cpp):
+patch 1.2+:
 
-in class GameManager()._startUrls change links to only "https://raw.githubusercontent.com/RaidLite/ConfigServer/refs/heads/main/ldoez_config.json"
-in class GameManager.Awake() add this.Server = false; before Init(...)
+in _startUrls change links to only "https://raw.githubusercontent.com/RaidLite/ConfigServer/refs/heads/main/ldoez_config.json"
+Awake() add this.Server = false; before Init()
 
-PATCH ONLY IN DNSPY FOLLOWING MY TUTORIAL. IF YOU WANT, YOU CAN USE FRIDA, BUT I CAN'T CONFIRM WHETHER IT WORKS OR NOT!!!
+in 1.4.1 kefir started using il2cpp for all new versions
