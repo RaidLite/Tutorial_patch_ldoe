@@ -15,4 +15,4 @@ patch 1.2+:
 in _startUrls change links to only "https://raw.githubusercontent.com/RaidLite/ConfigServer/refs/heads/main/ldoez_config.json"
 Awake() add this.Server = false; before Init()
 
-in 1.4.1 kefir started using il2cpp for all new versions
+in 1.4.1 kefir started using il2cpp for all new versions !!!
